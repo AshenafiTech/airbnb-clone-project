@@ -31,3 +31,25 @@
 
 - **CI/CD Pipelines**
   Automated pipelines for testing and deploying code changes.
+
+## 📊 Database Design
+This section outlines the core entities in the database and how they relate to each other
+### 🧑 Users
+  Represents Users of the platform, including property owners and guests.
+  **Key Fields:**
+  - `id` (Primary Key): unique Identifier for the user
+  - `name`: Full name of the user
+  - `email`: User's email address (unique)
+  - `password_hash`: Encrypted password
+  - `role`: Defines if the user is a host or guest
+  **Relationships**
+  - A user can own multiple properties
+  - A user can make multiple bookings
+  - A user can write multiple reviews
+  - A user can make multiple payments
+---
+
+### 🏡 Properties
+### 📅 Bookings
+### ✍️ Reviews
+### 💳 Payments
