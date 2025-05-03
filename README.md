@@ -131,3 +131,27 @@ Handles secure payments for bookings. This includes collecting payment informati
 
 ### ✍️ Review System
 Lets guests have reviews and ratings for properties they have stayed in. This helps build trust in the platform by providing feedback and helping future guests make informed decisions.
+
+## 🔐 API Security
+
+This section outlines the core security measures implemented to protect the application, its users, and their data.
+
+### 🔑 Authentication
+All API endpoints that require user interaction are secured using token-based authentication (e.g., JWT). This ensures that only verified users can access protected resources like booking a property or managing listings.
+
+**Why it matters:**
+Authentication protects user accounts and personal data by ensuring that only authorized individuals can perform sensitive operations. 
+
+---
+
+### 🛡️ Authorization
+Role-based access control is enforced to determine what actions a user can perform (e.g., only hosts can add properties, only admins can access platform analytics).
+
+**Why it matters:**
+Authorization prevents unauthorized actions, ensuring users can only access and modify resources they own or are permitted to use.
+
+### 🚫 Rate Limiting
+Rate limiting is applied to prevent abuse of the API through excessive requests (e.g., brute-force login attempts or spamming endpoints).
+
+**Why it matters:**  
+Rate limiting improves platform stability and protects against denial-of-service (DoS) attacks and resource abuse.
