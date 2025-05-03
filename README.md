@@ -149,6 +149,8 @@ Represents payment transactions for bookings.
   
   **Why it matters:**
   Authorization prevents unauthorized actions, ensuring users can only access and modify resources they own or are permitted to use.
+
+  ---
   
   ### 🚫 Rate Limiting
   Rate limiting is applied to prevent abuse of the API through excessive requests (e.g., brute-force login attempts or spamming endpoints).
