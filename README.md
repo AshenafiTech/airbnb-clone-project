@@ -34,8 +34,10 @@
 
 ## 📊 Database Design
 This section outlines the core entities in the database and how they relate to each other
+
 ### 🧑 Users
   Represents Users of the platform, including property owners and guests.
+  
   **Key Fields:**
   - `id` (Primary Key): unique Identifier for the user
   - `name`: Full name of the user
