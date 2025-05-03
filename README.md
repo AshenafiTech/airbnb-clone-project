@@ -157,3 +157,24 @@ Represents payment transactions for bookings.
   
   **Why it matters:**  
   Rate limiting improves platform stability and protects against denial-of-service (DoS) attacks and resource abuse.
+
+
+## 🚀 CI/CD Pipeline
+
+### What is CI/CD?
+
+CI/CD stands for **Continuous Integration** and **Continuous Deployment/Delivery**. It is a development practice where code changes are automatically built, tested, and deployed to production. The goal is to ensure rapid and reliable delivery of new features and bug fixes.
+
+### Why It's Important
+
+Implementing a CI/CD pipeline improves the development workflow by:
+- Automatically testing code to catch bugs early
+- Speeding up the deployment process
+- Ensuring consistent and repeatable builds
+- Reducing human error in manual deployments
+
+This leads to faster feature releases, higher code quality, and a more robust product.
+
+### Tools Used
+- **GitHub Actions**: Automates workflows like testing, building, and deployment directly from the GitHub repository.  
+- **Docker**: Packages the application and its dependencies into containers for consistent deployment across environments.  
