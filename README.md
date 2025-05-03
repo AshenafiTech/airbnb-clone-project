@@ -108,7 +108,26 @@ Represents payment transactions for bookings.
 - `user_id` (Foreign Key -> Users): The user who made the payment
 - `booking_id` (Foreign Key -> Bookings): The related booking
 - `amount`: Amount paid
-- `payment_date`: Date the payment was processed
+- `payment_date`: The date the payment was processed
 
 **Relationships:**
-- A payment belongs to a user and a boooking
+- A payment belongs to a user and a booking
+- 
+
+## 🧩 Feature Breakdown
+
+This section outlines the core features of the project and explains how each contributes to the overall functionality.
+### 👤 User Management
+Handles user registration, login, and profile management. This feature allows both guests and hosts to create accounts, securely log in, and manage their personal information and activity.
+
+### 🏡 Property Management
+Enables hosts to list, update, and delete their properties. Property management includes uploading descriptions, pricing, photos, and availability to attract potential guests.
+
+### 📅 Booking System
+Allows guests to view available properties and make bookings for specific dates.This features ensures date validation, prevents double booking, and maintains booking history for both users and hosts.
+
+### 💳 Payment Processing
+Handles secure payments for bookings. This includes collecting payment information, processing transactions, and linking payments to specific bookings for financial tracking.
+
+### ✍️ Review System
+Lets guests have reviews and ratings for properties they have stayed in. This helps build trust in the platform by providing feedback and helping future guests make informed decisions.
