@@ -42,14 +42,30 @@ This section outlines the core entities in the database and how they relate to e
   - `email`: User's email address (unique)
   - `password_hash`: Encrypted password
   - `role`: Defines if the user is a host or guest
+    
   **Relationships**
   - A user can own multiple properties
   - A user can make multiple bookings
   - A user can write multiple reviews
   - A user can make multiple payments
+    
 ---
 
 ### 🏡 Properties
+Represents properties listed by users for booking.
+
+**Key Fields:**
+- `id` (Primary Key): Unique identifier for the property
+- `owner_id` (Foreign Key -> Users): The user who owns the property
+- `title`: Name or title of the property
+- `description`: Detailed description of the property
+- `price_per_night`: Cost to stay per night
+
+**Relationships**:
+- A property belongs to a user (owner)
+- A property can have multiple bookings
+- A property can have multiple reviews
+
 ### 📅 Bookings
 ### ✍️ Reviews
 ### 💳 Payments
