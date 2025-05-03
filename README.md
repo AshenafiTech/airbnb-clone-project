@@ -66,6 +66,47 @@ Represents properties listed by users for booking.
 - A property can have multiple bookings
 - A property can have multiple reviews
 
+---
+
 ### 📅 Bookings
+Represents reservations made by users for properties
+
+**Key Fields:**
+- `id` (Primary Key): Unique identifier for the booking
+- `user_id`: (Foreign Key -> Users): The guest who made the booking
+- `property_id` (Foreign Key -> Properties): The property being booked
+- `start_date`: Booking start date
+- `end_date`: Booking end date
+
+**Relationships**:
+- A booking belongs to one user and one property
+- A booking may have one associated payment
+
+---
+
 ### ✍️ Reviews
+Captures feedback left by users on properties.
+
+**Key Fields:**
+- `id`: Unique identifier for the review
+- `user_id` (Forign Key -> Users): The guest who left the review
+- `property_id` (Foreign Key -> Properties): The property being reviewed
+- `rating`: Numerical rating (e.g., 1-5)
+- `comment`: Textual feedback
+
+**Relationships:**
+- A review belongs to a user and a property
+
+---
+
 ### 💳 Payments
+Represents payment transactions for bookings.
+**Key Fields:**
+- `id`: Unique identifier for the payment
+- `user_id` (Foreign Key -> Users): The user who made the payment
+- `booking_id` (Foreign Key -> Bookings): The related booking
+- `amount`: Amount paid
+- `payment_date`: Date the payment was processed
+
+**Relationships:**
+- A payment belongs to a user and a boooking
